@@ -15,4 +15,4 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/posp_enchilada.mk
+    $(LOCAL_DIR)/rebellion_enchilada.mk
