@@ -21,22 +21,17 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 # Inherit from enchilada device
 $(call inherit-product, device/oneplus/enchilada/device.mk)
 
-# Bootanimation
+# Inherit some common AOSP stuff.
+$(call inherit-product, vendor/aosp/config/common_full_phone.mk)
+TARGET_GAPPS_ARCH := arm64
 TARGET_BOOT_ANIMATION_RES := 1080
+export CUSTOM_BUILD_TYPE=OFFICIAL
 
-# Inherit some common dotOS stuff.
-$(call inherit-product, vendor/dot/config/common.mk)
-
-# Maintainer Prop
-PRODUCT_BUILD_PROP_OVERRIDES += \
-DEVICE_MAINTAINERS="Boos4721"
-DOT_BUILD_TYPE= OFFICIAL
-
-PRODUCT_NAME := dot_enchilada
+PRODUCT_NAME := aosp_enchilada
 PRODUCT_DEVICE := enchilada
 PRODUCT_MANUFACTURER := OnePlus
 PRODUCT_BRAND := OnePlus
-PRODUCT_MODEL := ONEPLUS A6003
+PRODUCT_MODEL := ONEPLUS A6000
 PRODUCT_RELEASE_NAME := enchilada
 
 PRODUCT_GMS_CLIENTID_BASE := android-oneplus

@@ -1,1 +1,1 @@
-add_lunch_combo dot_enchilada-userdebug
+add_lunch_combo aosp_enchilada-userdebug
