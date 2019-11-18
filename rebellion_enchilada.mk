@@ -21,10 +21,10 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 # Inherit from enchilada device
 $(call inherit-product, device/oneplus/enchilada/device.mk)
 
-# Inherit some common Lineage stuff.
-$(call inherit-product, vendor/arrow/config/common.mk)
+# Inherit some common Rebellion stuff.
+$(call inherit-product, vendor/rebellion/config/common.mk)
 
-PRODUCT_NAME := arrow_enchilada
+PRODUCT_NAME := rebellion_enchilada
 PRODUCT_DEVICE := enchilada
 PRODUCT_MANUFACTURER := OnePlus
 PRODUCT_BRAND := OnePlus
